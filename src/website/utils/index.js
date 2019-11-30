@@ -3,7 +3,11 @@ import {
 } from './consts';
 
 import {
-    TEST_HELPER
+    TEST_HELPER,
+    simpleActionCreator,
+    actionCreator,
+    extendedActionCreator,
+    equivalentActionCreator
 } from './helper';
 
 import { 
@@ -17,6 +21,10 @@ import {
 export {
     TEST_CONST,
     TEST_HELPER,
+    simpleActionCreator,
+    actionCreator,
+    extendedActionCreator,
+    equivalentActionCreator,
     INITIAL_STATE,
     TEST_LOGIC
 }
