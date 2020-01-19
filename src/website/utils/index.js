@@ -1,30 +1,8 @@
 import {
-    TEST_CONST
-} from './consts';
-
-import {
-    TEST_HELPER,
-    simpleActionCreator,
-    actionCreator,
-    extendedActionCreator,
-    equivalentActionCreator
-} from './helper';
-
-import { 
-    INITIAL_STATE 
-}  from './initialState';
-
-import {
-    TEST_LOGIC
-} from './logic';
+    INITIAL_STATE
+} from './initialState';
 
 export {
-    TEST_CONST,
-    TEST_HELPER,
-    simpleActionCreator,
-    actionCreator,
-    extendedActionCreator,
-    equivalentActionCreator,
-    INITIAL_STATE,
-    TEST_LOGIC
+    // den to xrisimopoiw kapou afou o kathe reducer tou core exei diko tou state object
+    INITIAL_STATE
 }

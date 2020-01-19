@@ -1,5 +1,7 @@
-import Main from 'components/main';
+import Main from '@website/components/main';
+import ResponsiveTest from '@website/components/responsiveTest';
 
 export {
-    Main
+    Main,
+    ResponsiveTest
 };

@@ -1,6 +1,6 @@
 'use strict';
 
-const myComponentsAliases = require('./myComponentsAliases');
+const myAliases = require('./myAliases');
 const fs = require('fs');
 const isWsl = require('is-wsl');
 const path = require('path');
@@ -311,7 +311,7 @@ module.exports = function(webpackEnv) {
           'scheduler/tracing': 'scheduler/tracing-profiling',
         }),
         ...(modules.webpackAliases || {}),
-        ...myComponentsAliases
+        ...myAliases
       },
       plugins: [
         // Adds support for installing with Plug'n'Play, leading to faster installs and adding
