@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-boilerplate/static/css/main.cab4e29b.chunk.css",
+    "main.js": "/react-boilerplate/static/js/main.b7d95aea.chunk.js",
+    "main.js.map": "/react-boilerplate/static/js/main.b7d95aea.chunk.js.map",
+    "runtime-main.js": "/react-boilerplate/static/js/runtime-main.3d7ada59.js",
+    "runtime-main.js.map": "/react-boilerplate/static/js/runtime-main.3d7ada59.js.map",
+    "static/js/2.9f66315e.chunk.js": "/react-boilerplate/static/js/2.9f66315e.chunk.js",
+    "static/js/2.9f66315e.chunk.js.map": "/react-boilerplate/static/js/2.9f66315e.chunk.js.map",
+    "index.html": "/react-boilerplate/index.html",
+    "precache-manifest.313e6c3bc2082e18130a4523a6094b03.js": "/react-boilerplate/precache-manifest.313e6c3bc2082e18130a4523a6094b03.js",
+    "service-worker.js": "/react-boilerplate/service-worker.js",
+    "static/css/main.cab4e29b.chunk.css.map": "/react-boilerplate/static/css/main.cab4e29b.chunk.css.map",
+    "static/media/tv.svg": "/react-boilerplate/static/media/tv.ec646854.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3d7ada59.js",
+    "static/js/2.9f66315e.chunk.js",
+    "static/css/main.cab4e29b.chunk.css",
+    "static/js/main.b7d95aea.chunk.js"
+  ]
+}
