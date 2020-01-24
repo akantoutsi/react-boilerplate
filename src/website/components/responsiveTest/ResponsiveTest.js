@@ -119,44 +119,27 @@ const ResponsiveTest = () => {
                         </Grid>
 
                         <Grid item className={classes.control} sm={8} md={8}>
-                            {/* <Grid container alignItems="center" justify="space-between"> */}
                             <Grid container alignItems="center">
-                                <Grid item xs={3} sm={4} md={5}>
-                                    <Grid item container direction="row" alignItems="center" wrap="nowrap">
-                                        <Grid item>
-                                            <Grid container alignItems="center">
-                                                <PanoramaHorizontalIcon />
-                                            </Grid>
-                                        </Grid>
-
-                                        <Grid item>
-                                            <Grid container alignItems="center">
-                                                <EuroIcon className={classes.currencyIcon} />
-                                            </Grid>
-                                        </Grid>
-
-                                        <Grid item>    
-                                            <Typography variant="subtitle1">30</Typography>
-                                        </Grid>
-                                    </Grid>
-                                </Grid>
-
                                 <Grid item xs={3} sm={4} md={5}>
                                     <Grid container direction="row" alignItems="center" wrap="nowrap">
                                         <Grid item>
                                             <Grid container alignItems="center">
                                                 <PanoramaHorizontalIcon />
+                                                <EuroIcon className={classes.currencyIcon} />
+                                                <Typography variant="subtitle1">30</Typography>
                                             </Grid>
                                         </Grid>
-
+                                    </Grid>
+                                </Grid>
+                                
+                                <Grid item xs={3} sm={4} md={5}>
+                                    <Grid container direction="row" alignItems="center" wrap="nowrap">
                                         <Grid item>
                                             <Grid container alignItems="center">
+                                                <PanoramaHorizontalIcon />
                                                 <EuroIcon className={classes.currencyIcon} />
+                                                <Typography variant="subtitle1">30</Typography>
                                             </Grid>
-                                        </Grid>
-
-                                        <Grid item>    
-                                            <Typography variant="subtitle1">30</Typography>
                                         </Grid>
                                     </Grid>
                                 </Grid>
