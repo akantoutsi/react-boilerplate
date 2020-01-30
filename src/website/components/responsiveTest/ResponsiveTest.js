@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
@@ -11,6 +11,7 @@ import IconButton from '@material-ui/core/IconButton';
 import PanoramaHorizontalIcon from '@material-ui/icons/PanoramaHorizontal';
 import { CustomCheckbox } from '@core/ui';
 import tv from '../../assets/tv.svg';
+import Popover from '@material-ui/core/Popover';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -87,20 +88,91 @@ const useStyles = makeStyles(theme => ({
             justifyContent: 'center',
         },
     },
+    largeButton: {
+        padding: '24px',
+        color: 'purple',
+        width: '24px',
+        height: '24px',
+    },
 }));
                     {/* how to make responsive the image */}
-const ResponsiveTest = () => {
+const ResponsiveTest = ({
+    id,
+    open,
+    anchorEl,
+    onClose,
+}) => {
     const classes = useStyles();
+
+    // const searchResults = [
+    //     { id: 1, name: 'Afro' },
+    //     { id: 2, name: 'Afroditi' },
+    //     { id: 3, name: 'Amy' },
+    //     { id: 4, name: 'Afroula' },
+    //     { id: 5, name: 'Afroditaki' },
+    //     { id: 6, name: 'Rania' },
+    // ];
+
+    // const [ results, setResults ] = useState(searchResults);
+
+    // const handleChangedInput = event => {
+    //     const res = searchResults.filter(elem => elem.name.includes(event.target.value));
+    //     setResults(res);
+    // } 
     
     return (
+        <div>
+        <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={onClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'center',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'center',
+        }}
+      >
+          aaaaa
+          </Popover>
         <div className={classes.root}>
+            {/* <input onChange={handleChangedInput} /> */}
+            
+            {/* {
+                results && (
+                    results.map(elem => (
+                        <ul>
+                            <li key={elem.id}>{elem.name}</li>
+                        </ul>
+                    ))
+                )
+            } */}
+
             <Grid container direction="column">
                 <Grid item container direction="row" justify="space-between" alignItems="center" className={classes.main}>
                     {/* how to make responsive the image */}
                     <Grid item style={{ minWidth: '300px', maxWidth: '300px' }} xs={12} sm={12} md={4} lg={4} xl={4}>
-                        <Icon>
-                            <img src={tv} style={{ width: '100%', height: '100%' }} />
-                        </Icon>
+                        {/* <Icon> */}
+                            {/* <img src={tv} style={{ width: '100%', height: '100%' }} /> */}
+                        {/* </Icon> */}
+
+                        {/* <IconButton className={classes.largeButton}> - etsi megalwnw to giro giro */}
+                        <IconButton>
+                            <SVG 
+                                // d={"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"} 
+                                // fontSize="large"    
+                                htmlColor="green"
+                                // fontSize="default"
+                                // width="48" 
+                                // height="48" 
+                                // viewBox="0 0 24 24"
+                                className={classes.largeButton}
+                            />
+                        </IconButton>
+                        
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={4} lg={4} xl={4}>
@@ -359,6 +431,7 @@ const ResponsiveTest = () => {
                     </Grid>
                 </Grid>
             </Grid>
+        </div>
         </div>
     );
 }
