@@ -121,23 +121,6 @@ const ResponsiveTest = ({
     // } 
     
     return (
-        <div>
-        <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={onClose}
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'center',
-        }}
-        transformOrigin={{
-          vertical: 'top',
-          horizontal: 'center',
-        }}
-      >
-          aaaaa
-          </Popover>
         <div className={classes.root}>
             {/* <input onChange={handleChangedInput} /> */}
             
@@ -155,12 +138,12 @@ const ResponsiveTest = ({
                 <Grid item container direction="row" justify="space-between" alignItems="center" className={classes.main}>
                     {/* how to make responsive the image */}
                     <Grid item style={{ minWidth: '300px', maxWidth: '300px' }} xs={12} sm={12} md={4} lg={4} xl={4}>
-                        {/* <Icon> */}
-                            {/* <img src={tv} style={{ width: '100%', height: '100%' }} /> */}
-                        {/* </Icon> */}
+                        <Icon>
+                            <img src={tv} style={{ width: '100%', height: '100%' }} />
+                        </Icon>
 
                         {/* <IconButton className={classes.largeButton}> - etsi megalwnw to giro giro */}
-                        <IconButton>
+                        {/* <IconButton>
                             <SVG 
                                 // d={"M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"} 
                                 // fontSize="large"    
@@ -171,7 +154,7 @@ const ResponsiveTest = ({
                                 // viewBox="0 0 24 24"
                                 className={classes.largeButton}
                             />
-                        </IconButton>
+                        </IconButton> */}
                         
                     </Grid>
 
@@ -431,7 +414,6 @@ const ResponsiveTest = ({
                     </Grid>
                 </Grid>
             </Grid>
-        </div>
         </div>
     );
 }

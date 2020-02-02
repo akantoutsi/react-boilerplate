@@ -4,6 +4,13 @@ import green from '@material-ui/core/colors/green';
 import blue from '@material-ui/core/colors/blue';
 
 export const theme = responsiveFontSizes(createMuiTheme({
+  props: {
+    // Name of the component ⚛️
+    MuiButtonBase: {
+      // The default props to change
+      disableRipple: true, // No more ripple, on the whole application 💣!
+    },
+  },
   palette: {
     common: { black: "#676464", white: "#fff" },
     background: { paper: "#fff", default: "#fafafa" },

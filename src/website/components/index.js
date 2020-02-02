@@ -1,9 +1,9 @@
 import Main from '@website/components/main';
 import ResponsiveTest from '@website/components/responsiveTest';
-import SimplePopover from '@website/components/SimplePopover';
+import TopCategoriesTest from '@website/components/TopCategoriesTest';
 
 export {
     Main,
     ResponsiveTest,
-    SimplePopover
+    TopCategoriesTest,
 };

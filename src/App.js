@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid';
 import {
   Main,
   ResponsiveTest,
-  SimplePopover
+  TopCategoriesTest,
 } from '@website/components';
 
 import './App.css';
@@ -30,7 +30,7 @@ function App() {
         direction="column"
         justify="space-evenly"
       >
-        <SimplePopover />
+        <TopCategoriesTest />
         {/* <ResponsiveTest /> */}
         {/* <Main /> */}
       </Grid>
